@@ -125,11 +125,11 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="users.html">Usuarios</a></li>
-                <li class="nav-item"> <a class="nav-link" href="servers.html">Listas de Servidores</a></li>
-                <li class="nav-item"> <a class="nav-link" href="databases.html">Listas DB</a></li>
-                <li class="nav-item"> <a class="nav-link" href="storage.html">Listas AYR</a></li>
-                <li class="nav-item"> <a class="nav-link" href="apps.html">Listas APP</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../settings/users.html">Usuarios</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../settings/servers.html">Listas de Servidores</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../settings/databases.html">Listas DB</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../settings/storage.html">Listas AYR</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../settings/apps.html">Listas APP</a></li>
               </ul>
             </div>
           </li>
@@ -141,13 +141,13 @@
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="../forms/link_server.html">Servidor</a></li>
-                <li class="nav-item"><a class="nav-link" href="../forms/link_storage.html">Almacenamiento</a></li>
-                <li class="nav-item"><a class="nav-link" href="../forms/link_backup.html">Respaldo</a></li>
-                <li class="nav-item"><a class="nav-link" href="../forms/link_database.html">Base de Datos</a></li>
-                <li class="nav-item"><a class="nav-link" href="../forms/link_app.html">Aplicaciones</a></li>
-                <li class="nav-item"><a class="nav-link" href="../forms/pwd_server.html">Password Servidor</a></li>
-                <li class="nav-item"><a class="nav-link" href="../forms/pwd_database.html">Password BD</a></li>
+                <li class="nav-item"><a class="nav-link" href="link_server.html">Servidor</a></li>
+                <li class="nav-item"><a class="nav-link" href="link_storage.html">Almacenamiento</a></li>
+                <li class="nav-item"><a class="nav-link" href="link_backup.html">Respaldo</a></li>
+                <li class="nav-item"><a class="nav-link" href="link_database.html">Base de Datos</a></li>
+                <li class="nav-item"><a class="nav-link" href="link_app.html">Aplicaciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="pwd_server.html">Password Servidor</a></li>
+                <li class="nav-item"><a class="nav-link" href="pwd_database.html">Password BD</a></li>
               </ul>
             </div>
           </li>
@@ -177,108 +177,56 @@
             <div class="col-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Definir Roles</h4>
-                  <p class="card-description"></p>
-                  <form class="forms-sample">
-                    <div class="form-group">
-                      <label for="exampleSelectGender">Perfil del Rol</label>
-                        <select class="form-control form-control-sm" id="exampleSelectGender">
-                          <option>Admin</option>
-                          <option>Base de datos</option>
-                          <option>AYR</option>
-                          <option>UNIX</option>
-                          <option>WIN</option>
-                        </select>
-                    </div>
-
-                    <button type="submit" class="btn btn-danger mr-2">Guardar</button>
-                    <button type="submit" class="btn btn-light mr-2">Eliminar</button>
-                    <button class="btn btn-light mr-2">Cancelar</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Asignar Rol</h4>
-                  <p class="card-description"></p>
+  
                   <form class="forms-sample">
 
-                    <div class="form-group">
-                      <label for="exampleSelectGender">Indicador</label>
+                    <h5 class="card-title">DATOS DE RESPALDO</h5>
+                    <div class="form-group row">
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Seleccione nombre del Servidor:</label>
+                      <div class="col-sm-9">
                         <select class="form-control form-control-sm" id="exampleSelectGender">
-                          <option>Miguel Angel</option>
-                          <option>Kenuan Sequera</option>
-                          <option>Angel Disante</option>
+                          <option>---</option>
                         </select>
+                      </div>
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Seleccione el esquema de Respaldo: </label>
+                      <div class="col-sm-9">
+                        <select class="form-control form-control-sm" id="exampleSelectGender">
+                          <option>---</option>
+                        </select>
+                      </div>
+                      <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Horario:  Dia / Hora</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control form-control-sm" id="exampleInputName1" placeholder="">
+                      </div>
                     </div>
 
-                    <div class="form-group">
-                      <label for="exampleInputName1">Nombre y Apellido</label>
-                      <input type="text" class="form-control form-control-sm" id="exampleInputName1" placeholder="Nombre y Apellido">
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleSelectGender">Indique el Rol</label>
-                        <select class="form-control form-control-sm" id="exampleSelectGender">
-                          <option>Admin</option>
-                          <option>Base de datos</option>
-                          <option>AYR</option>
-                          <option>UNIX</option>
-                          <option>WIN</option>
-                        </select>
-                    </div>
-
-                    <button type="submit" class="btn btn-danger mr-2">Guardar</button>
-                    <button type="submit" class="btn btn-light mr-2">Eliminar</button>
-                    <button class="btn btn-light">Cancelar</button>
+                    <button type="submit" class="btn btn-danger mr-2">Agregar</button>
                   </form>
 
                   <p></p>
                   <p></p><br>
                   <hr>
 
-                  <h4 class="card-title text-center">Listado de Usuarios</h4>
+                  <h4 class="card-title"></h4>
                   <div class="table-responsive">
                     <table class="table">
                       <thead>
                         <tr>
-                          <th>Nombre y Apellido</th>
-                          <th>Indicador</th>
-                          <th>Rol</th>
-                          <th>Fecha</th>
+                          <th>ESQUEMA</th>
+                          <th>HORARIO</th>
+                          <th></th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td>Juan Perez</td>
-                          <td>PEREZJ</td>
-                          <td>administrador</td>
-                          <td>01/01/2024</td>
+                          <td></td>
+                          <td></td>
+                          <td><i class="ti-pencil-alt"></i> | <i class="ti-trash"></i></td>
                         </tr>
                         <tr>
-                          <td>Pedro Martinez</td>
-                          <td>MARTINEZP</td>
-                          <td>BD</td>
-                          <td>01/01/2024</td>
-                        </tr>
-                        <tr>
-                          <td>Marcos Rodriguez</td>
-                          <td>RODRIGUEZM</td>
-                          <td>AYR</td>
-                          <td>01/01/2024</td>
-                        </tr>
-                        <tr>
-                          <td>Domingo Luna</td>
-                          <td>LUNAD</td>
-                          <td>Aplicaciones</td>
-                          <td>01/01/2024</td>
-                        </tr>
-                        <tr>
-                          <td>Pedro Lopez</td>
-                          <td>LOPEZ</td>
-                          <td>unix</td>
-                          <td>01/01/2024</td>
+                          <td></td>
+                          <td></td>
+                          <td><i class="ti-pencil-alt"></i> | <i class="ti-trash"></i></td>
                         </tr>
                       </tbody>
                     </table>

@@ -125,11 +125,11 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="users.html">Usuarios</a></li>
-                <li class="nav-item"> <a class="nav-link" href="servers.html">Listas de Servidores</a></li>
-                <li class="nav-item"> <a class="nav-link" href="databases.html">Listas DB</a></li>
-                <li class="nav-item"> <a class="nav-link" href="storage.html">Listas AYR</a></li>
-                <li class="nav-item"> <a class="nav-link" href="apps.html">Listas APP</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../settings/users.html">Usuarios</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../settings/servers.html">Listas de Servidores</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../settings/databases.html">Listas DB</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../settings/storage.html">Listas AYR</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../settings/apps.html">Listas APP</a></li>
               </ul>
             </div>
           </li>
@@ -141,13 +141,13 @@
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="../forms/link_server.html">Servidor</a></li>
-                <li class="nav-item"><a class="nav-link" href="../forms/link_storage.html">Almacenamiento</a></li>
-                <li class="nav-item"><a class="nav-link" href="../forms/link_backup.html">Respaldo</a></li>
-                <li class="nav-item"><a class="nav-link" href="../forms/link_database.html">Base de Datos</a></li>
-                <li class="nav-item"><a class="nav-link" href="../forms/link_app.html">Aplicaciones</a></li>
-                <li class="nav-item"><a class="nav-link" href="../forms/pwd_server.html">Password Servidor</a></li>
-                <li class="nav-item"><a class="nav-link" href="../forms/pwd_database.html">Password BD</a></li>
+                <li class="nav-item"><a class="nav-link" href="link_server.html">Servidor</a></li>
+                <li class="nav-item"><a class="nav-link" href="link_storage.html">Almacenamiento</a></li>
+                <li class="nav-item"><a class="nav-link" href="link_backup.html">Respaldo</a></li>
+                <li class="nav-item"><a class="nav-link" href="link_database.html">Base de Datos</a></li>
+                <li class="nav-item"><a class="nav-link" href="link_app.html">Aplicaciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="pwd_server.html">Password Servidor</a></li>
+                <li class="nav-item"><a class="nav-link" href="pwd_database.html">Password BD</a></li>
               </ul>
             </div>
           </li>
@@ -180,198 +180,68 @@
   
                   <form class="forms-sample">
 
-                    <h5 class="card-title">TIPO DE CONEXION</h5>
+                    <h5 class="card-title">ASOCIAR PASSWORD A USUARIO DE BASE DE DATOS</h5>
                     <div class="form-group row">
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Nombre:</label>
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Seleccione nombre del Servidor:</label>
                       <div class="col-sm-9">
                         <select class="form-control form-control-sm" id="exampleSelectGender">
-                          <option>SSH</option>
-                          <option>TELNET</option>
-                          <option>ILO</option>
-                          <option>FTP</option>
-                          <option>...</option>
+                          <option>---</option>
                         </select>
-                      </div>
-                      <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Usuario:</label>
+                      </div> 
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Selecccione IP para el Servidor:</label>
                       <div class="col-sm-9">
                         <select class="form-control form-control-sm" id="exampleSelectGender">
-                          <option>root</option>
-                          <option>admin</option>
-                          <option>administrador</option>
-                          <option>...</option>
+                          <option>---</option>
                         </select>
-                      </div>
-                    </div>
-
-                    <hr>
-                    <h5 class="card-title">DEFINIR IP</h5>
-                    <div class="form-group row">
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Direccion IP:</label>
+                      </div> 
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Usuario:</label>
                       <div class="col-sm-9">
                         <input type="text" class="form-control form-control-sm" id="exampleInputName1" placeholder="">
-                      </div>
-                    </div>
-
-                    <hr>
-                    <h5 class="card-title">TIPO DE AMBIENTE</h5>
-                    <div class="form-group row">
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Descripcion:</label>
-                      <div class="col-sm-9">
-                        <select class="form-control form-control-sm" id="exampleSelectGender">
-                          <option>Por Definir</option>
-                          <option>Desarrollo</option>
-                          <option>Produccion</option>
-                          <option>Calidad</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <hr>
-                    <h5 class="card-title">TIPOS DE SERVICIO / CAPA</h5>
-                    <div class="form-group row">
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Nombre:</label>
-                      <div class="col-sm-9">
-                        <select class="form-control form-control-sm" id="exampleSelectGender">
-                          <option>Base de Datos</option>
-                          <option>Web</option>
-                          <option>App</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Descripcion del Servicio:</label>
-                      <div class="col-sm-9">
-                        <select class="form-control form-control-sm" id="exampleSelectGender">
-                          <option>N/A</option>
-                          <option>Postgres</option>
-                          <option>Oracle</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Version del Servicio:</label>
-                      <div class="col-sm-9">
-                        <select class="form-control form-control-sm" id="exampleSelectGender">
-                          <option>N/A</option>
-                          <option>15</option>
-                          <option>10</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <hr>
-                    <h5 class="card-title">DEFINIR LOS SISTEMAS OPERATIVOS</h5>
-                    <p class="card-description">CATEGORIA DE S.O.:</p>
-                    <div class="form-group row">
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Descripcion:</label>
-                      <div class="col-sm-9">
-                        <select class="form-control form-control-sm" id="exampleSelectGender">
-                          <option>Por Definir</option>
-                          <option>UNIX</option>
-                          <option>Linux</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                    </div>
-                    <p class="card-description">CATEGORIA DE S.O.:</p>
-                    <div class="form-group row">
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Nombre  y  Version:</label>
-                      <div class="col-sm-9">
-                        <select class="form-control form-control-sm" id="exampleSelectGender">
-                          <option>N/A</option>
-                          <option>Debian 12</option>
-                          <option>Windows 2019</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <hr>
-                    <h5 class="card-title">DEFINIR VIRTUALIZADOR</h5>
-                    <div class="form-group row">
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Nombre y version del virtualizador:</label>
-                      <div class="col-sm-9">
-                        <select class="form-control form-control-sm" id="exampleSelectGender">
-                          <option>XenServer</option>
-                          <option>Hyper-V</option>
-                          <option>Vware</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <hr>
-                    <h5 class="card-title">TIPO SERVIDOR</h5>
-                    <div class="form-group row">
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Descripcion:</label>
-                      <div class="col-sm-9">
-                        <select class="form-control form-control-sm" id="exampleSelectGender">
-                          <option>Radeable</option>
-                          <option>Blade</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <hr>
-                    <h5 class="card-title">ESTATUS DE SERVIDORES</h5>
-                    <div class="form-group row">
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Descripcion:</label>
-                      <div class="col-sm-9">
-                        <select class="form-control form-control-sm" id="exampleSelectGender">
-                          <option>Operativo</option>
-                          <option>Apagado</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <hr>
-                    <h5 class="card-title">IMPACTO DEL SERVIDOR</h5>
-                    <div class="form-group row">
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Descripcion del Impacto:</label>
-                      <div class="col-sm-9">
-                        <select class="form-control form-control-sm" id="exampleSelectGender">
-                          <option>Por Definir</option>
-                          <option>Alto</option>
-                          <option>Bajo</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <hr>
-                    <h5 class="card-title">UBICACIÓN</h5>
-                    <p class="card-description">LOCALIDAD:</p>
-                    <div class="form-group row">
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Descripcion:</label>
-                      <div class="col-sm-9">
-                        <select class="form-control form-control-sm" id="exampleSelectGender">
-                          <option>Los Teques</option>
-                          <option>Caracas</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                    </div>
-                    <p class="card-description">NUMERO DE PASILLO:</p>
-                    <div class="form-group row">
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Numero de Pasillo:</label>
+                      </div>  
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Ingrese Password:</label>
                       <div class="col-sm-9">
                         <input type="text" class="form-control form-control-sm" id="exampleInputName1" placeholder="">
-                      </div>
-                    </div>
-                    <p class="card-description">NUMERO DE RACK:</p>
-                    <div class="form-group row">
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Numero del RACK:</label>
+                      </div>  
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Confirme Password:</label>
                       <div class="col-sm-9">
                         <input type="text" class="form-control form-control-sm" id="exampleInputName1" placeholder="">
-                      </div>
+                      </div>  
                     </div>
 
                     <button type="submit" class="btn btn-danger mr-2">Guardar</button>
-                    <button type="submit" class="btn btn-light mr-2">Eliminar</button>
-                    <button class="btn btn-light">Cancelar</button>
                   </form>
+
+                  <p></p>
+                  <p></p><br>
+                  <hr>
+
+                  <h4 class="card-title"></h4>
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th>IP</th>
+                          <th>USUARIO</th>
+                          <th>PASSWORD</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td><i class="ti-pencil-alt"></i> | <i class="ti-trash"></i></td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td><i class="ti-pencil-alt"></i> | <i class="ti-trash"></i></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>
