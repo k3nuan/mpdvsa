@@ -1,0 +1,19 @@
+.sidebar .nav:not(.sub-menu) > .nav-item.active {
+    background: #FF4747;
+}
+.sidebar .nav .nav-item.active > .nav-link {
+    background: #FF4747;
+}
+.sidebar .nav.sub-menu {
+    background: #FF4747;
+}
+.sidebar .nav:not(.sub-menu) > .nav-item > .nav-link[aria-expanded="true"] {
+    background: #FF4747;
+}
+.sidebar .nav:not(.sub-menu) > .nav-item:hover > .nav-link, .sidebar .nav:not(.sub-menu) > .nav-item:hover[aria-expanded="true"] {
+    background: #FF4747;
+    color: #fff;
+}
+.sidebar .nav .nav-item .nav-link i.menu-icon {
+    color: #fff;
+}
