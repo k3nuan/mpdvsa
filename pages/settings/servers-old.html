@@ -180,76 +180,193 @@
   
                   <form class="forms-sample">
 
-                    <h5 class="card-title">DEFINIR CAJAS DE ALMACENAMIENTO</h5>
+                    <h5 class="card-title">TIPO DE CONEXION</h5>
                     <div class="form-group row">
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Nombre y Modelo caja:</label>
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Nombre:</label>
                       <div class="col-sm-9">
                         <select class="form-control form-control-sm" id="exampleSelectGender">
-                          <option>HITACHI 10800</option>
+                          <option>SSH</option>
+                          <option>TELNET</option>
+                          <option>ILO</option>
+                          <option>FTP</option>
                           <option>...</option>
                         </select>
                       </div>
-                      <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Tipo de Almacenamiento:</label>
+                      <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Usuario:</label>
                       <div class="col-sm-9">
                         <select class="form-control form-control-sm" id="exampleSelectGender">
-                          <option>SAN</option>
-                          <option>NAS</option>
-                          <option>ISCI</option>
+                          <option>root</option>
+                          <option>admin</option>
+                          <option>administrador</option>
                           <option>...</option>
                         </select>
                       </div>
                     </div>
 
-                    <button type="submit" class="btn btn-danger mr-2">Guardar</button>
-                    <button type="submit" class="btn btn-light mr-2">Eliminar</button>
-                    <button class="btn btn-light">Cancelar</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-  
-                  <form class="forms-sample">
-                    <h5 class="card-title">RESPALDO</h5>
+                    <hr>
+                    <h5 class="card-title">DEFINIR IP</h5>
                     <div class="form-group row">
-                      <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Esquema:</label>
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Direccion IP:</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control form-control-sm" id="exampleInputName1" placeholder="">
+                      </div>
+                    </div>
+
+                    <hr>
+                    <h5 class="card-title">TIPO DE AMBIENTE</h5>
+                    <div class="form-group row">
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Descripcion:</label>
+                      <div class="col-sm-9">
+                        <select class="form-control form-control-sm" id="exampleSelectGender">
+                          <option>Por Definir</option>
+                          <option>Desarrollo</option>
+                          <option>Produccion</option>
+                          <option>Calidad</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <hr>
+                    <h5 class="card-title">TIPOS DE SERVICIO / CAPA</h5>
+                    <div class="form-group row">
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Nombre:</label>
+                      <div class="col-sm-9">
+                        <select class="form-control form-control-sm" id="exampleSelectGender">
+                          <option>Base de Datos</option>
+                          <option>Web</option>
+                          <option>App</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Descripcion del Servicio:</label>
                       <div class="col-sm-9">
                         <select class="form-control form-control-sm" id="exampleSelectGender">
                           <option>N/A</option>
-                          <option>Full</option>
-                          <option>Incremental</option>
+                          <option>Postgres</option>
+                          <option>Oracle</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Version del Servicio:</label>
+                      <div class="col-sm-9">
+                        <select class="form-control form-control-sm" id="exampleSelectGender">
+                          <option>N/A</option>
+                          <option>15</option>
+                          <option>10</option>
                           <option>...</option>
                         </select>
                       </div>
                     </div>
-                    <button type="submit" class="btn btn-danger mr-2">Guardar</button>
-                    <button type="submit" class="btn btn-light mr-2">Eliminar</button>
-                    <button class="btn btn-light">Cancelar</button>
-                  </form>
-                </div>
-              </div>
-            </div>
 
-            <div class="col-12 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-  
-                  <form class="forms-sample">
-                    <h5 class="card-title">HORARIO RESPALDO</h5>
-                    <div class="form-group row">                     
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Dia de la Semana:</label>
+                    <hr>
+                    <h5 class="card-title">DEFINIR LOS SISTEMAS OPERATIVOS</h5>
+                    <p class="card-description">CATEGORIA DE S.O.:</p>
+                    <div class="form-group row">
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Descripcion:</label>
                       <div class="col-sm-9">
-                        <input class="form-control" placeholder="dd/mm/yyyy"/>
+                        <select class="form-control form-control-sm" id="exampleSelectGender">
+                          <option>Por Definir</option>
+                          <option>UNIX</option>
+                          <option>Linux</option>
+                          <option>...</option>
+                        </select>
                       </div>
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Hora:</label>
+                    </div>
+                    <p class="card-description">CATEGORIA DE S.O.:</p>
+                    <div class="form-group row">
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Nombre  y  Version:</label>
                       <div class="col-sm-9">
-                        <input class="form-control" placeholder=""/>
+                        <select class="form-control form-control-sm" id="exampleSelectGender">
+                          <option>N/A</option>
+                          <option>Debian 12</option>
+                          <option>Windows 2019</option>
+                          <option>...</option>
+                        </select>
                       </div>
                     </div>
 
+                    <hr>
+                    <h5 class="card-title">DEFINIR VIRTUALIZADOR</h5>
+                    <div class="form-group row">
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Nombre y version del virtualizador:</label>
+                      <div class="col-sm-9">
+                        <select class="form-control form-control-sm" id="exampleSelectGender">
+                          <option>XenServer</option>
+                          <option>Hyper-V</option>
+                          <option>Vware</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <hr>
+                    <h5 class="card-title">TIPO SERVIDOR</h5>
+                    <div class="form-group row">
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Descripcion:</label>
+                      <div class="col-sm-9">
+                        <select class="form-control form-control-sm" id="exampleSelectGender">
+                          <option>Radeable</option>
+                          <option>Blade</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <hr>
+                    <h5 class="card-title">ESTATUS DE SERVIDORES</h5>
+                    <div class="form-group row">
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Descripcion:</label>
+                      <div class="col-sm-9">
+                        <select class="form-control form-control-sm" id="exampleSelectGender">
+                          <option>Operativo</option>
+                          <option>Apagado</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <hr>
+                    <h5 class="card-title">IMPACTO DEL SERVIDOR</h5>
+                    <div class="form-group row">
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Descripcion del Impacto:</label>
+                      <div class="col-sm-9">
+                        <select class="form-control form-control-sm" id="exampleSelectGender">
+                          <option>Por Definir</option>
+                          <option>Alto</option>
+                          <option>Bajo</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <hr>
+                    <h5 class="card-title">UBICACIÓN</h5>
+                    <p class="card-description">LOCALIDAD:</p>
+                    <div class="form-group row">
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Descripcion:</label>
+                      <div class="col-sm-9">
+                        <select class="form-control form-control-sm" id="exampleSelectGender">
+                          <option>Los Teques</option>
+                          <option>Caracas</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                    </div>
+                    <p class="card-description">NUMERO DE PASILLO:</p>
+                    <div class="form-group row">
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Numero de Pasillo:</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control form-control-sm" id="exampleInputName1" placeholder="">
+                      </div>
+                    </div>
+                    <p class="card-description">NUMERO DE RACK:</p>
+                    <div class="form-group row">
+                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Numero del RACK:</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control form-control-sm" id="exampleInputName1" placeholder="">
+                      </div>
+                    </div>
 
                     <button type="submit" class="btn btn-danger mr-2">Guardar</button>
                     <button type="submit" class="btn btn-light mr-2">Eliminar</button>
