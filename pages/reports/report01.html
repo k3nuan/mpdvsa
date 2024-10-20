@@ -125,11 +125,11 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="users.html">Usuarios</a></li>
-                <li class="nav-item"> <a class="nav-link" href="servers.html">Listas de Servidores</a></li>
-                <li class="nav-item"> <a class="nav-link" href="databases.html">Listas DB</a></li>
-                <li class="nav-item"> <a class="nav-link" href="storage.html">Listas AYR</a></li>
-                <li class="nav-item"> <a class="nav-link" href="apps.html">Listas APP</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../settings/users.html">Usuarios</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../settings/servers.html">Listas de Servidores</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../settings/databases.html">Listas DB</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../settings/storage.html">Listas AYR</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../settings/apps.html">Listas APP</a></li>
               </ul>
             </div>
           </li>
@@ -167,98 +167,121 @@
               </ul>
             </div>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#reports" aria-expanded="false" aria-controls="reports">
+              <i class="ti-files menu-icon"></i>
+              <span class="menu-title">Reportes</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="reports">
+              <ul class="nav flex-column sub-menu nav-reports">
+                <li class="nav-title">Listados Generales</li>
+                <li class="nav-item"> <a class="nav-link" href="report01.html">Servidores</a></li>
+                <li class="nav-item"> <a class="nav-link" href="report01.html">Aplicaciones</a></li>
+                <li class="nav-item"> <a class="nav-link" href="report01.html">Base de Datos</a></li>
+                <li class="nav-item"> <a class="nav-link" href="report01.html">Instancias de BD</a></li>
+                <li class="nav-item"> <a class="nav-link" href="report01.html">Cajas de Almacenamiento</a></li>
+                <li class="nav-item"> <a class="nav-link" href="report01.html">Password Servidores</a></li>
+                <li class="nav-item"> <a class="nav-link" href="report01.html">Virtualizadores</a></li>
+                <li class="nav-item"> <a class="nav-link" href="report01.html">Servidores Virtuales</a></li>
+                <li class="nav-item"> <a class="nav-link" href="report01.html">Servidores Fisicos</a></li>
+                <li class="nav-title">Listados Filtrados</li>
+                <li class="nav-item"> <a class="nav-link" href="report01.html">Servidores por Categoria / S.O.</a></li>
+                <li class="nav-item"> <a class="nav-link" href="report01.html">Servidores por Categoria / Servicio</a></li>
+                <li class="nav-item"> <a class="nav-link" href="report01.html">Servidores por Impacto / Localidad</a></li>
+                <li class="nav-title">Servicios Afectados</li>
+                <li class="nav-item"> <a class="nav-link" href="report01.html">Caja de Almacenamiento</a></li>
+                <li class="nav-item"> <a class="nav-link" href="report01.html">Servidor</a></li>
+                <li class="nav-item"> <a class="nav-link" href="report01.html">Centro de Datos</a></li>
+                <li class="nav-item"> <a class="nav-link" href="report01.html">Pasillo</a></li>
+                <li class="nav-item"> <a class="nav-link" href="report01.html">Rack</a></li>
+                <li class="nav-title">Logs</li>
+                <li class="nav-item"> <a class="nav-link" href="report01.html">Logs de Acceso</a></li>
+              </ul>
+            </div>
+          </li>
         </ul>
       </nav>
       <!-- partial -->
       <div class="main-panel">        
         <div class="content-wrapper">
+          <h3 class="text-center pb-2">Listado de General de Servidores</h3>
           <div class="row">
-
-            <div class="col-12 grid-margin stretch-card">
+            <div class="col-md-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-  
-                  <form class="forms-sample">
-
-                    <h5 class="card-title">DEFINIR CAJAS DE ALMACENAMIENTO</h5>
-                    <div class="form-group row">
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Localidad:</label>
-                      <div class="col-sm-9">
-                        <input class="form-control" placeholder=""/>
-                      </div>                      
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Nombre y Modelo caja:</label>
-                      <div class="col-sm-9">
-                        <select class="form-control form-control-sm" id="exampleSelectGender">
-                          <option>HITACHI 10800</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                      <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Tipo de Almacenamiento:</label>
-                      <div class="col-sm-9">
-                        <select class="form-control form-control-sm" id="exampleSelectGender">
-                          <option>SAN</option>
-                          <option>NAS</option>
-                          <option>ISCI</option>
-                          <option>...</option>
-                        </select>
-                      </div>
+                  <p class="card-title text-center">Resumen</p>
+                    <div class="table-responsive">
+                      <table class="table table-reports">
+                        <tr>
+                          <td><h4>Total: 5</h4></td>
+                          <td><h4>Fisicos: 3</h4></td>
+                          <td><h4>Virtuales: 2</h4></td>
+                        </tr>
+                        <tr>
+                          <td><h4>Categoria:</h4></td>
+                          <td>Windows: 1</td>
+                          <td>Linux: 2</td>
+                        </tr>
+                        <tr>
+                          <td></td>
+                          <td>Windows: 1</td>
+                          <td>Linux: 1</td>
+                        </tr>
+                      </table>
                     </div>
-
-                    <button type="submit" class="btn btn-danger mr-2">Guardar</button>
-                    <button type="submit" class="btn btn-light mr-2">Eliminar</button>
-                    <button class="btn btn-light">Cancelar</button>
-                  </form>
                 </div>
               </div>
             </div>
+          </div>
 
+          <div class="row">
             <div class="col-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-  
-                  <form class="forms-sample">
-                    <h5 class="card-title">RESPALDO</h5>
-                    <div class="form-group row">
-                      <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Esquema:</label>
-                      <div class="col-sm-9">
-                        <select class="form-control form-control-sm" id="exampleSelectGender">
-                          <option>N/A</option>
-                          <option>Full</option>
-                          <option>Incremental</option>
-                          <option>...</option>
-                        </select>
-                      </div>
-                    </div>
-                    <button type="submit" class="btn btn-danger mr-2">Guardar</button>
-                    <button type="submit" class="btn btn-light mr-2">Eliminar</button>
-                    <button class="btn btn-light">Cancelar</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-  
-                  <form class="forms-sample">
-                    <h5 class="card-title">HORARIO RESPALDO</h5>
-                    <div class="form-group row">                     
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Dia de la Semana:</label>
-                      <div class="col-sm-9">
-                        <input class="form-control" placeholder="dd/mm/yyyy"/>
-                      </div>
-                      <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Hora:</label>
-                      <div class="col-sm-9">
-                        <input class="form-control" placeholder=""/>
-                      </div>
-                    </div>
-
-
-                    <button type="submit" class="btn btn-danger mr-2">Guardar</button>
-                    <button type="submit" class="btn btn-light mr-2">Eliminar</button>
-                    <button class="btn btn-light">Cancelar</button>
-                  </form>
+                  <div class="table-responsive">
+                    <table class="table table-bordered">
+                      <thead class="table-danger">
+                        <tr>
+                          <th>Nombre Servidor</th>
+                          <th>Categoria</th>
+                          <th>Localidad</th>
+                          <th>Servicio</th>
+                          <th>Ambiente</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Servidor-129</td>
+                          <td>WINDOWS</td>
+                          <td>Los Teques</td>
+                          <td>DHCP</td>
+                          <td><label class="badge badge-success">Produccion</label></td>
+                        </tr>
+                        <tr>
+                          <td>Servidor-421</td>
+                          <td>UNIX</td>
+                          <td>Los Teques</td>
+                          <td>DNS</td>
+                          <td><label class="badge badge-warning">Desarrollo</label></td>
+                        </tr>
+                        <tr>
+                          <td>Servidor-890</td>
+                          <td>UNIX</td>
+                          <td>Los Teques</td>
+                          <td>WEB</td>
+                          <td><label class="badge badge-success">Produccion</label></td>
+                        </tr>
+                        <tr>
+                          <td>Servidor-646</td>
+                          <td>WINDOWS</td>
+                          <td>Caracas</td>
+                          <td>BD</td>
+                          <td><label class="badge badge-success">Produccion</label></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
                 </div>
               </div>
             </div>

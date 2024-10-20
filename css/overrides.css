@@ -23,3 +23,25 @@
 .sidebar {
     width: 385px;
 }
+.sidebar .nav.sub-menu.nav-reports .nav-item {
+    padding-left: 15px;
+}
+
+.sidebar .nav.sub-menu .nav-title {
+    color: #fff;
+    padding: 0.7rem 1rem;
+    position: relative;
+    font-size: 0.875rem;
+    line-height: 1;
+    height: auto;
+    border-top: 0;
+    text-transform: uppercase;
+    list-style-type: none;
+    padding-left: 0;
+    font-weight: bold;
+}
+.table.table-reports td {
+    padding: 1.125rem 1.375rem;
+    vertical-align: top;
+    border: None;
+}
