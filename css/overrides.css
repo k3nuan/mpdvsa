@@ -14,9 +14,6 @@
     background: #FF4747;
     color: #fff;
 }
-.sidebar .nav .nav-item .nav-link i.menu-icon {
-    color: #fff;
-}
 .card h5.card-title {
     font-size: 1rem;
 }
@@ -26,7 +23,6 @@
 .sidebar .nav.sub-menu.nav-reports .nav-item {
     padding-left: 15px;
 }
-
 .sidebar .nav.sub-menu .nav-title {
     color: #fff;
     padding: 0.7rem 1rem;
